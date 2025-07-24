@@ -45,7 +45,7 @@
 <h3>👉 <a href="https://themixly.com/themes/ready-mix-concrete-react-template/" target="_blank"> Upgrade to Full Version</a></h3>
 
 <h2>🧠 Template Use Cases</h2>
-<p>RMCPro is ideal for:>
+<p>RMCPro is ideal for:</p>
 <ul>
   <li>Ready Mix Concrete (RMC) suppliers</li>
   <li>Construction companies and contractors</li>

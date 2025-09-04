@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 // Page Routes
 // ========================
 import Homepage from "./pages/Homepage";
+import Drama from "./pages/Drama";
 
 // ========================
 // App Component
@@ -27,6 +28,7 @@ const App = () => {
       {/* Route Definitions */}
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/drama" element={<Drama />} />
       </Routes>
 
       {/* Global Site Footer */}

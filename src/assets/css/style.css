@@ -2,8 +2,8 @@
 =          Font Definition        =
 =================================*/
 @font-face {
-  font-family: 'Impact';
-  src: url('../fonts/impact.ttf') format('truetype');
+  font-family: "Impact";
+  src: url("../fonts/impact.ttf") format("truetype");
 }
 
 /*=================================
@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #4A4A4A;
+  color: #4a4a4a;
   text-decoration: none;
 }
 
 a:hover {
-  color: #F26A1B;
+  color: #f26a1b;
 }
 
 /*=================================
@@ -31,7 +31,7 @@ section h2 {
   margin-bottom: 15px;
   font-size: 18px;
   font-weight: 600;
-  color: #4A4A4A;
+  color: #4a4a4a;
   text-transform: uppercase;
 }
 
@@ -56,10 +56,10 @@ section h3::after {
     to right,
     #ffffff 0,
     #ffffff 10%,
-    #F26A1B 100%
+    #f26a1b 100%
   ) !important;
   border-radius: 10px;
-  border: 2px solid #F26A1B;
+  border: 2px solid #f26a1b;
 }
 
 section h3.type-2::after {
@@ -89,7 +89,7 @@ section {
 }
 
 .section-bg {
-  background-color: #E7E7E7;
+  background-color: #e7e7e7;
 }
 
 .entry {
@@ -114,8 +114,8 @@ section {
 
 .btn-primary {
   margin-top: 25px;
-  background-color: #4A4A4A;
-  border-color: #4A4A4A;
+  background-color: #4a4a4a;
+  border-color: #4a4a4a;
   color: #fff;
 }
 
@@ -157,7 +157,7 @@ section {
 =================================*/
 
 .header {
-  background-color: #4A4A4A;
+  background-color: #4a4a4a;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -181,7 +181,6 @@ section {
   text-align: left;
   font-size: 3rem;
   color: #ffffff;
-  
 }
 
 .slider .carousel-caption {
@@ -190,11 +189,11 @@ section {
   white-space: nowrap;
   background: linear-gradient(
       111deg,
-      rgb(242 106 27 / 80%) 60%,
-      rgb(242 106 27  / 80%) 60%,
-      rgb(242 106 27  / 80%) 60%
+      rgb(242 106 27 / 40%) 40%,
+      rgb(242 106 27 / 40%) 40%,
+      rgb(242 106 27 / 40%) 40%
     ),
-    url(../images/about-rmc-pro.webp);
+    url(../images/homelogo.jpg);
   background-position: top right;
   bottom: unset;
   color: #fff;
@@ -243,7 +242,7 @@ section {
   margin-right: 0px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #F26A1B;
+  background-color: #f26a1b;
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;
@@ -252,16 +251,19 @@ section {
   transition: opacity 0.6s ease;
 }
 .slider-image-wrapper {
+  width: 100%;
+  height: 60vh; /* take 60% of viewport height */
+  max-height: 600px; /* limit on large screens */
   position: relative;
+  overflow: hidden; /* crop overflow */
 }
 
 .slider-img {
   width: 100%;
-  height: auto;
+  height: 67vh; /* full viewport height */
+  object-fit: cover; /* fills without distortion */
+  margin-top: 0;
   display: block;
-  object-fit: cover;
-  max-height: 80vh;
-  min-height: 50vh !important;
 }
 
 .slider-overlay {
@@ -270,8 +272,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
-  z-index: 1;
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .carousel-caption {
@@ -288,18 +289,17 @@ section {
   color: #fff;
 }
 
-
 /*=================================
 =           Backgrounds           =
 =================================*/
 
 .bg-1 {
-  background: url('../images/bg-1.svg') no-repeat bottom left;
+  background: url("../images/bg-1.svg") no-repeat bottom left;
   padding-bottom: unset;
 }
 
 .bg-2 {
-  background: url('../images/bg-2.webp') no-repeat top center;
+  background: url("../images/bg-2.webp") no-repeat top center;
   padding: unset;
 }
 
@@ -318,7 +318,7 @@ section {
   float: left;
   padding: 20px;
   border-radius: 50%;
-  background-color: #E7E7E7;
+  background-color: #e7e7e7;
 }
 
 .benefits h4,
@@ -353,7 +353,7 @@ section {
 
 #footer {
   padding: 45px 0 1px;
-  background-color: #4A4A4A;
+  background-color: #4a4a4a;
   color: #fff;
 }
 
@@ -374,9 +374,9 @@ section {
   margin: 5px;
   font-size: 40px;
   padding: 8px;
-  border: 2px solid #F26A1B;
+  border: 2px solid #f26a1b;
   border-radius: 50%;
-  color: #F26A1B;
+  color: #f26a1b;
 }
 
 #footer h5 {
@@ -384,7 +384,7 @@ section {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #F26A1B;
+  color: #f26a1b;
 }
 
 #footer h5::after {
@@ -393,7 +393,7 @@ section {
   width: 2rem;
   height: 0.2rem;
   margin-left: 8px;
-  background-color: #F26A1B;
+  background-color: #f26a1b;
   border-radius: 10px;
 }
 
@@ -418,7 +418,7 @@ section {
 
 #footer ul li a:hover,
 #footer a:hover {
-  color: #F26A1B;
+  color: #f26a1b;
 }
 
 #footer .links {
@@ -436,9 +436,9 @@ section {
 =================================*/
 
 .info h4 span {
-  font-family: 'Impact';
+  font-family: "Impact";
   font-size: 16rem;
-  color: #F26A1B;
+  color: #f26a1b;
 }
 
 .info h4 {
@@ -476,4 +476,58 @@ section {
 
 .menu-footer .b-right {
   border-right: 1px solid #ccc;
+}
+
+.actor-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.actor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.actor-icon img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f26a1b; /* matches accent color in your gradient */
+}
+
+.actor-details h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.actor-details h6 {
+  margin: 4px 0 10px;
+  font-size: 14px;
+  color: #888;
+  font-weight: 500;
+}
+
+.actor-details p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.slider-img-mobile {
+  width: 100%;
+  height: auto; /* keep natural ratio */
+  max-height: 60vh; /* avoid overly tall images */
+  object-fit: cover; /* cover container without distortion */
+  display: block;
 }

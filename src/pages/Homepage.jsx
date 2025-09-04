@@ -63,23 +63,23 @@ const Homepage = () => {
 
             {/* Right Column: Text Content */}
             <Col md={7}>
-              <h2>Introduction</h2>
               <h3>
-                Men are often expected to show strength while hiding inner
-                turmoil.
+                A wealthy Nigerian entrepreneur, admired for his generosity and
+                smile, battles the hidden wounds of a childhood trauma that
+                never healed.
               </h3>
               <p>
-                The project’s conception, production, and execution were shaped
-                by ideas of trauma, gender, and the cultural stigma surrounding
-                mental health. Choosing to film in Abakaliki with mostly
-                first-time local actors (80%) added authenticity to the setting
-                and performances, while also presenting challenges in directing
-                and interpretation. The use of local talent not only grounded
-                the story in its cultural context but also created opportunities
-                for new voices in visual storytelling.
+                Cracks in the Light is more than a film—it is a conversation
+                starter. By exploring themes of masculinity, trauma, and mental
+                health stigma in Nigeria, the story gives voice to silent
+                struggles too often dismissed or hidden. It asks its audience to
+                look deeper, to recognize that smiles can mask scars, and to
+                confront the urgent need for empathy and awareness in our
+                communities.
               </p>
               <Link to="/drama" className="btn btn-primary">
-                Watch Drama <ArrowRightAltIcon />
+                Watch the Trailer
+                <ArrowRightAltIcon />
               </Link>
             </Col>
           </Row>

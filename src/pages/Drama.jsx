@@ -8,7 +8,7 @@ function Drama() {
     if (window.dailymotion) {
       window.dailymotion
         .createPlayer("my-dailymotion-player", {
-          video: "x9pxrju", // Dailymotion video ID
+          video: "x9pz6fg", // Dailymotion video ID
           width: "100%",
           height: "100%",
           params: {
@@ -31,7 +31,7 @@ function Drama() {
       <button
         onClick={() => navigate("/")}
         style={{
-          position: "fixed", // ✅ stays on top even on mobile
+          position: "fixed",
           top: "5px",
           left: "10px",
           backgroundColor: "#f26a1b",
@@ -42,7 +42,7 @@ function Drama() {
           cursor: "pointer",
           fontWeight: "600",
           fontSize: "15px",
-          zIndex: 9999, // ✅ ensures it's above the iframe
+          zIndex: 9999,
           boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
         }}
       >
@@ -54,8 +54,8 @@ function Drama() {
         style={{
           position: "relative",
           width: "100%",
-          marginTop: "50px", // ✅ pushes video down so button doesn’t overlap
-          aspectRatio: "16 / 7", // slimmer ratio
+          marginTop: "50px",
+          aspectRatio: "16 / 7",
         }}
       >
         <div
@@ -65,6 +65,29 @@ function Drama() {
             height: "100%",
           }}
         ></div>
+      </div>
+
+      {/* Watch Full Movie Button */}
+      <div style={{ textAlign: "center", margin: "30px 0" }}>
+        <button
+          onClick={() => navigate("/full-movie")} // ✅ route to your full movie page
+          style={{
+            backgroundColor: "#f26a1b",
+            color: "#fff",
+            border: "none",
+            padding: "12px 24px",
+            borderRadius: "8px",
+            cursor: "pointer",
+            fontWeight: "600",
+            fontSize: "16px",
+            boxShadow: "0 2px 6px rgba(0,0,0,0.3)",
+            transition: "background 0.3s",
+          }}
+          onMouseOver={(e) => (e.target.style.backgroundColor = "#d85a15")}
+          onMouseOut={(e) => (e.target.style.backgroundColor = "#f26a1b")}
+        >
+          🎬 Watch the Full Movie
+        </button>
       </div>
     </div>
   );
